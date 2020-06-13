@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon --watch 'src/**/*.js' src/app.js"
+    "dev": "nodemon --watch 'src/**/*.js' src/app.js",
+    "docker-build": "docker build -t node_koa .",
+    "docker-run": "docker run --name node_koa_app -p 3000:3000 node_koa"
   },
   "dependencies": {
     "@koa/router": "^9.0.1",
