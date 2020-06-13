@@ -1,0 +1,6 @@
+{
+  "server": {
+    "port": "&&NODE_KOA_SERVER_PORT&&",
+    "host": "&&NODE_KOA_SERVER_HOST&&"
+  }
+}

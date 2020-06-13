@@ -1,9 +1,10 @@
 const Koa = require('koa');
+const config = require('./config');
 const { logger, responseTime } = require('./middleware');
 const router = require('./router');
 
 const app = new Koa();
-const port = 3000;
+const port = config.server.port;
 
 app.use(logger);
 app.use(responseTime);
