@@ -1,2 +1,2 @@
 # node_koa
-NodeJS Koa server
+Example NodeJS Koa server
